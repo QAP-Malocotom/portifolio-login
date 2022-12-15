@@ -1,18 +1,19 @@
 <!doctype html>
 <html lang="pt-BR">
-    
-<head> 
+
+<head>
     <!-- TYPE -->
     <meta charset="UTF-8">
     <!-- TITLE -->
-    <title>Login de Membros</title><!--Pensar num nome legal-->
-            
-     <link rel="stylesheet" href="style.css">
+    <title>Login de Membros</title>
+    <!--Pensar num nome legal-->
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css" media="all">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab" type="text/css" media="all">
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab" type="text/css" media="all">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <style>
         body,
@@ -67,7 +68,6 @@
         .apl-login.col-1 p {
             color: #3e464f !important;
         }
-
         /*DUAS COLUNAS*/
         
         .apl-login.col-2 .form,
@@ -120,41 +120,43 @@
         }
     </style>
 </head>
+
 <body>
-    <!-- box central -->        
-    <div class="apl-login col-1 has-bg has-border" style="background-color: black;"></div>
+    <!-- box central -->
+    <div class="apl-login col-1 has-bg has-border" style="background-color: black;">
+        <!--logo-->
+        <div class="loginbox animated fadeIn">
 
-    <!--logo-->
-    <div class="loginbox animated fadeIn">   
-        <div class="brand">            
-            <img class="animated flipInX" src="logo.png">
+            <div class="brand">
+                <img class="animated flipInX" src="logo.png">
+            </div>
+
+            <div class="form">
+                <h4 class="login-title" data-content="BEM-VINDO!">BEM-VINDO!</h4>
+                <p class="login-description" data-content="Se você já é aluno, preencha seus dados de acesso">
+                    Se você já é aluno, preencha seus dados de acesso
+                </p>
+
+                <div class="loginform">
+                    <form name="loginform" id="loginform" action="#" method="post">
+                        <p class="login-username">
+                            <input class="input" type="text" name="user_login" id="user_login" value="" size="20" placeholder="Email" required>
+                            <span class="error hide">Insira sua senha</span>
+                        </p>
+
+                        <p class="login-password">
+                            <input class="input" type="password" name="user_password" id="user_password" value="" size="20" placeholder="Senha" required>
+                            <span class="error hide">Insira sua senha</span>
+                        </p>
+
+                        <p class="login-submit">
+                            <input type="submit" name="wp-submit" id="wp-submit" class="buttom buttom-primary" value="Acessar">
+                        </p>
+
+                    </form>
+                </div>
+            </div>
+
         </div>
     </div>
-
-    <div class="form">
-        <h4 class="login-title" data-content="BEM-VINDO!">BEM-VINDO!</h4>
-        <p class="login-description" data-content="Se você já é aluno, preencha seus dados de acesso">
-            Se você já é aluno, preencha seus dados de acesso
-        </p>
-
-        <div class="loginform">
-            <form name="loginform" id="loginform" action="#" method="post">
-                <p class="login-username">
-                   <input class="input" type="text" name="user_login" id="user_login" value="" size="20" placeholder="Email" required>
-                   <span class="error hide">Insira sua senha</span>            
-                </p>
-
-                <p class="login-password">
-                    <input class="input" type="password" name="user_password" id="user_password" value="" size="20" placeholder="Senha" required>
-                    <span class="error hide">Insira sua senha</span>            
-                </p>
-
-                <p class="login-submit">
-                    <input type="submit" name="wp-submit" id="wp-submit" class="buttom buttom-primary" value="Acessar">                
-                </p>
-
-            </form>
-        </div>
-    </div>
-
 </body>
