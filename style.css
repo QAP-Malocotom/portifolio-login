@@ -1,0 +1,986 @@
+.apl-login,
+body,
+html {
+    height: 100%
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+body * {
+    outline: 0;
+    text-decoration: none
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.apl-500 {
+    min-height: 100%;
+    position: relative;
+    background: #002551
+}
+
+.apl-500 .moonbox {
+    max-width: 630px;
+    display: table;
+    margin: auto
+}
+
+.apl-500 .image {
+    margin: 100px auto
+}
+
+.apl-500 .image img {
+    max-height: 200px;
+    display: table;
+    margin: auto;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-box-shadow: 0 0 81px 24px rgba(12, 67, 113, .72);
+    box-shadow: 0 0 81px 24px rgba(12, 67, 113, .72)
+}
+
+.apl-500 .infos h1 {
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -.68px;
+    margin-bottom: 20px
+}
+
+.apl-500 .footer p,
+.apl-500 .infos p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    font-family: Roboto;
+    text-align: center
+}
+
+.apl-500 .infos p {
+    line-height: 24px
+}
+
+.apl-500 .footer {
+    max-width: 630px;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.apl-500 .footer p {
+    line-height: 24px
+}
+
+.apl-500 .footer p a {
+    color: #fff;
+    font-weight: 700;
+    border-bottom: 2px solid #fff
+}
+
+@media screen and (max-width:320px) {
+    .apl-500 .moonbox {
+        max-width: 80%
+    }
+    .apl-500 .image {
+        margin: 30px auto
+    }
+    .apl-500 .image img {
+        max-height: 50px
+    }
+    .apl-500 .infos h1 {
+        font-size: 23px;
+        line-height: 30px
+    }
+    .apl-500 .infos p {
+        font-size: 15px;
+        line-height: 25px
+    }
+    .apl-500 .footer {
+        min-width: 80%
+    }
+    .apl-500 .footer p {
+        font-size: 12px;
+        line-height: 25px
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:680px) {
+    .apl-500 .moonbox {
+        max-width: 80%
+    }
+    .apl-500 .image {
+        margin: 60px auto
+    }
+    .apl-500 .image img {
+        max-height: 80px
+    }
+    .apl-500 .infos h1 {
+        font-size: 26px;
+        line-height: 30px
+    }
+    .apl-500 .infos p {
+        font-size: 16px;
+        line-height: 25px
+    }
+    .apl-500 .footer {
+        min-width: 80%
+    }
+    .apl-500 .footer p {
+        font-size: 12px;
+        line-height: 25px
+    }
+}
+
+@media screen and (max-width:1136px) and (orientation:landscape) {
+    .apl-500 .moonbox {
+        max-width: 80%
+    }
+    .apl-500 .image {
+        margin: 30px auto
+    }
+    .apl-500 .image img {
+        max-height: 50px
+    }
+    .apl-500 .infos h1 {
+        font-size: 23px;
+        line-height: 30px
+    }
+    .apl-500 .infos p {
+        font-size: 15px;
+        line-height: 25px
+    }
+    .apl-500 .footer {
+        min-width: 80%
+    }
+    .apl-500 .footer p {
+        font-size: 12px;
+        line-height: 25px
+    }
+}
+
+.apl-login {
+    min-height: 100%;
+    background: #F2F3F7
+}
+
+.apl-login * {
+    color: #3E464F;
+    font-size: 13px;
+    font-family: Roboto
+}
+
+.apl-login h4 {
+    width: 100%;
+    font-size: 27px;
+    font-weight: 700
+}
+
+.apl-login.col-1 .loginbox {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.apl-login.col-1 .loginbox .brand {
+    max-width: 360px
+}
+
+.apl-login.col-1 .loginbox .brand img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.apl-login.col-1.has-border:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 0;
+    left: 0
+}
+
+.apl-login.col-2 {
+    width: 100%
+}
+
+.apl-login.col-2 .column {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: inline-block
+}
+
+.apl-login.col-2 .column:first-child {
+    float: left
+}
+
+.apl-login.col-2 .column:last-child {
+    float: right
+}
+
+.apl-login.col-2 .column.col-form {
+    background-color: #fff
+}
+
+.apl-login.col-2 .column.col-form .loginbox {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.apl-login.col-2 .column.col-form .loginbox .form {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.apl-login.col-2 .column.col-form .brandbox {
+    min-width: 40%;
+    max-width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.apl-login.col-2 .column.col-form .brandbox img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 90px!important
+}
+
+.apl-login.col-2 .column.col-form .logobox {
+    position: absolute;
+    margin-top: -13vh
+}
+
+.apl-login.col-2 .column.col-form .logobox img {
+    max-width: 100%;
+    max-height: 90px
+}
+
+.apl-login.col-2 .column.col-infos {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative
+}
+
+.apl-login.col-2 .column.col-infos .infobox {
+    bottom: 10%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff
+}
+
+.apl-login.col-2 .column.col-infos .infobox h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    margin-bottom: 12px
+}
+
+.apl-login.col-2 .column.col-infos .infobox p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 20px
+}
+
+.apl-login.col-2 .column.col-infos .infobox .button {
+    color: #fff;
+    font-size: 15px;
+    padding: 11px 25px;
+    text-align: center;
+    background-color: transparent!important;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: table;
+    margin: auto
+}
+
+.apl-login.col-2.has-border .col-form:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 0;
+    left: 0
+}
+
+.apl-login.has-bg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.apl-login .loginbox .brand img {
+    display: table;
+    margin: auto auto 60px;
+    max-height: 60px
+}
+
+.apl-login .loginbox .form {
+    overflow: hidden;
+    position: relative;
+    max-width: 280px;
+    background-color: #fff;
+    padding: 50px 45px;
+    -webkit-box-shadow: 0 0 44px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 0 44px 0 rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    max-height: 400px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+
+.apl-login .loginbox .form.sending:after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: #fff;
+    opacity: .8;
+    -webkit-opacity: .8;
+    -moz-opacity: .8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px
+}
+
+.apl-login .loginbox .form h4 {
+    margin-bottom: 10px
+}
+
+.apl-login .loginbox .form h4+p {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 30px
+}
+
+.apl-login .loginbox .form form input[type=text],
+.apl-login .loginbox .form form input[type=password] {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    position: relative;
+    padding: 0 0 12px;
+    border-bottom: 1px solid #A5ADB8
+}
+
+.apl-login .loginbox .form form input[type=text]+span.error,
+.apl-login .loginbox .form form input[type=password]+span.error {
+    margin-top: 14px;
+    display: inline-block;
+    color: #ED5465!important;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px
+}
+
+.apl-login .loginbox .form form input[type=text]+span.error.green,
+.apl-login .loginbox .form form input[type=password]+span.error.green {
+    color: #327d76!important
+}
+
+.apl-login .loginbox .form form input[type=submit] {
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    padding: 11px 25px;
+    text-align: center;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: none;
+    cursor: pointer
+}
+
+.apl-login .loginbox .form form input.error {
+    color: #ED5465!important;
+    border-bottom-color: #ED5465!important
+}
+
+.apl-login .loginbox .form form input.error.green {
+    color: #327d76!important
+}
+
+.apl-login .loginbox .form form .login-remember {
+    margin: 0 0 30px
+}
+
+.apl-login .loginbox .form form .login-password,
+.apl-login .loginbox .form form .login-username {
+    margin-bottom: 26px
+}
+
+.apl-login .loginbox .form .actions {
+    display: block;
+    margin-top: 30px
+}
+
+.apl-login .loginbox .form .actions .remember_link,
+.apl-login .loginbox .form .actions .remembered_link {
+    float: left
+}
+
+.apl-login .loginbox .form .actions .signup_link {
+    float: right
+}
+
+.apl-login .loginbox .form .actions a {
+    color: #A5ADB8
+}
+
+.apl-login .loginbox .form .actions a:hover {
+    color: #6d798a
+}
+
+.apl-login .loginbox .form .errorbox {
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 75%;
+    top: 7px;
+    padding: 5px 10px;
+    color: #ED5465;
+    font-size: 13px;
+    line-height: 14.5px;
+    border-radius: 5px
+}
+
+.apl-login .loginbox .form .errorbox.green {
+    color: #327d76!important
+}
+
+.apl-login #loginrecover input[type=submit] {
+    margin-top: 26px
+}
+
+.apl-login .loginresetpass form input[type=password] {
+    margin: 25px auto
+}
+
+.apl-login .loginresetpass form small {
+    line-height: 23px;
+    margin-bottom: 18px;
+    display: inline-block
+}
+
+@media screen and (max-width:320px) {
+    .apl-login {
+        min-height: 100%!important;
+        height: 100%!important
+    }
+    .apl-login.col-1 .loginbox {
+        width: 88%
+    }
+    .apl-login.col-1 .loginbox .brand img {
+        margin: auto auto 20px!important;
+        max-height: 30px!important
+    }
+    .apl-login.col-1 .loginbox .form {
+        padding: 20px 23px!important;
+        margin: 20px 0!important
+    }
+    .apl-login.col-1 .loginbox .form h4 {
+        font-size: 20px!important
+    }
+    .apl-login.col-1 .loginbox .form p {
+        font-size: 13px!important;
+        margin-bottom: 3px!important
+    }
+    .apl-login.col-1 .loginbox .form form input[type=text] {
+        margin-bottom: 20px!important
+    }
+    .apl-login.col-1 .loginbox .form form .login-remember,
+    .apl-login.col-1 .loginbox .form form input[type=password] {
+        margin-bottom: 10px!important
+    }
+    .apl-login.col-1 .loginbox .form form input[type=submit] {
+        margin-top: 10px!important
+    }
+    .apl-login.col-2 .column {
+        float: initial!important;
+        width: 100%!important;
+        height: initial!important
+    }
+    .apl-login.col-2 .column:first-child {
+        margin-bottom: 0!important;
+        padding-bottom: 90px!important
+    }
+    .apl-login.col-2 .column:last-child {
+        height: 100%!important;
+        margin-top: -3px!important
+    }
+    .apl-login.col-2 .col-form {
+        margin-bottom: 40px!important
+    }
+    .apl-login.col-2 .brandbox,
+    .apl-login.col-2 .loginbox {
+        top: initial!important;
+        left: initial!important;
+        position: initial!important;
+        -webkit-transform: initial!important;
+        transform: initial!important
+    }
+    .apl-login.col-2 .brandbox {
+        margin-top: 65px;
+        margin-bottom: 65px;
+        max-width: 60%!important;
+        margin-left: auto!important;
+        margin-right: auto!important
+    }
+    .apl-login.col-2 .brandbox img {
+        display: table;
+        margin: auto;
+        max-height: 40px
+    }
+    .apl-login.col-2 .logobox {
+        position: initial!important;
+        margin: 70px auto!important
+    }
+    .apl-login.col-2 .logobox img {
+        display: table;
+        margin: auto
+    }
+    .apl-login.col-2 .loginbox .form {
+        width: 68%;
+        max-width: 260px;
+        max-height: initial;
+        overflow: initial;
+        padding: 38px 30px!important;
+        display: table;
+        margin: auto
+    }
+    .apl-login.col-2 .loginbox .form h4 {
+        font-size: 23px
+    }
+    .apl-login.col-2 .loginbox .form p {
+        font-size: 14px
+    }
+    .apl-login.col-2 .infobox {
+        width: 85%
+    }
+    .apl-login.col-2 .infobox h1 {
+        font-size: 24px!important
+    }
+    .apl-login.col-2 .infobox p {
+        font-size: 16px!important
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:680px) {
+    .apl-login {
+        min-height: 90%!important;
+        height: 90%!important
+    }
+    .apl-login.col-1 {
+        height: 100%!important
+    }
+    .apl-login.col-1 .loginbox {
+        width: 88%
+    }
+    .apl-login.col-1 .loginbox .brand img {
+        margin: auto auto 20px!important;
+        max-height: 45px!important
+    }
+    .apl-login.col-1 .loginbox .form {
+        padding: 30px 40px!important
+    }
+    .apl-login.col-1 .loginbox .form h4 {
+        font-size: 20px!important
+    }
+    .apl-login.col-1 .loginbox .form p {
+        font-size: 13px!important;
+        margin-bottom: 20px!important
+    }
+    .apl-login.col-1 .loginbox .form form .login-remember,
+    .apl-login.col-1 .loginbox .form form input[type=password] {
+        margin-bottom: 10px!important
+    }
+    .apl-login.col-2 .column {
+        float: initial!important;
+        width: 100%!important;
+        height: initial!important
+    }
+    .apl-login.col-2 .column:first-child {
+        margin-bottom: 0!important;
+        padding-bottom: 90px!important
+    }
+    .apl-login.col-2 .column:last-child {
+        height: 100%!important;
+        margin-top: -3px!important
+    }
+    .apl-login.col-2 .col-form {
+        margin-bottom: 40px!important
+    }
+    .apl-login.col-2 .brandbox,
+    .apl-login.col-2 .loginbox {
+        top: initial!important;
+        left: initial!important;
+        position: initial!important;
+        -webkit-transform: initial!important;
+        transform: initial!important;
+        padding: 38px 30px!important;
+        display: table;
+        margin: auto
+    }
+    .apl-login.col-2 .brandbox {
+        margin-top: 65px;
+        max-width: 60%!important
+    }
+    .apl-login.col-2 .brandbox img {
+        display: table;
+        margin: auto;
+        max-height: 40px
+    }
+    .apl-login.col-2 .logobox {
+        position: initial!important;
+        margin: 70px auto!important
+    }
+    .apl-login.col-2 .logobox img {
+        display: table;
+        margin: auto
+    }
+    .apl-login.col-2 .loginbox .form {
+        max-height: initial;
+        overflow: initial;
+        padding: 38px 30px!important
+    }
+    .apl-login.col-2 .loginbox .form h4 {
+        font-size: 23px
+    }
+    .apl-login.col-2 .loginbox .form p {
+        font-size: 14px
+    }
+    .apl-login.col-2 .infobox {
+        width: 85%
+    }
+    .apl-login.col-2 .infobox h1 {
+        font-size: 24px!important
+    }
+    .apl-login.col-2 .infobox p {
+        font-size: 16px!important
+    }
+}
+
+@media screen and (max-width:1136px) and (orientation:landscape) {
+    .apl-login {
+        min-height: 100%!important;
+        height: auto!important
+    }
+    .apl-login.col-1 {
+        padding-bottom: 30px!important
+    }
+    .apl-login.col-1 .loginbox {
+        width: 100%!important;
+        top: initial!important;
+        left: initial!important;
+        position: initial!important;
+        -webkit-transform: initial!important;
+        transform: initial!important
+    }
+    .apl-login.col-1 .loginbox .brand {
+        padding-top: 30px!important
+    }
+    .apl-login.col-1 .loginbox .brand img {
+        margin: 0 auto 30px!important
+    }
+    .apl-login.col-1 .loginbox .form {
+        display: table;
+        margin: auto
+    }
+    .apl-login.col-2 .column {
+        float: initial!important;
+        width: 100%!important
+    }
+    .apl-login.col-2 .col-form {
+        padding-bottom: 40px!important;
+        margin-bottom: 0!important
+    }
+    .apl-login.col-2 .col-infos {
+        position: absolute!important
+    }
+    .apl-login.col-2 .brandbox,
+    .apl-login.col-2 .loginbox {
+        top: initial!important;
+        left: initial!important;
+        position: initial!important;
+        -webkit-transform: initial!important;
+        transform: initial!important
+    }
+    .apl-login.col-2 .brandbox {
+        margin-top: 65px
+    }
+    .apl-login.col-2 .brandbox img {
+        display: table;
+        margin: auto;
+        max-height: 40px
+    }
+    .apl-login.col-2 .logobox {
+        position: initial!important;
+        margin: 70px auto!important
+    }
+    .apl-login.col-2 .logobox img {
+        display: table;
+        margin: auto
+    }
+    .apl-login.col-2 .loginbox .form {
+        -webkit-transform: translateX(-50%)!important;
+        transform: translateX(-50%)!important;
+        left: 50%!important;
+        max-height: initial;
+        overflow: initial;
+        padding: 40px 100px
+    }
+    .apl-login.col-2 .loginbox .form h4 {
+        font-size: 23px
+    }
+    .apl-login.col-2 .loginbox .form p {
+        font-size: 14px
+    }
+    .apl-login.col-2 .infobox {
+        width: 85%
+    }
+    .apl-login.col-2 .infobox h1 {
+        font-size: 24px!important
+    }
+    .apl-login.col-2 .infobox p {
+        font-size: 16px!important
+    }
+}
+
+@media screen and (min-width:1366px) and (max-width:1366px) {
+    .apl-login.col-2 .brandbox {
+        top: 60px!important;
+        left: 50%!important
+    }
+    .apl-login.col-2 .logobox img {
+        max-height: 40px!important
+    }
+    .apl-login.col-2 .form {
+        padding: 18px 32px!important
+    }
+    .apl-login.col-2 .form .login-title {
+        font-size: 24px!important
+    }
+    .apl-login.col-2 .form .login-description {
+        font-size: 14px!important
+    }
+}
+
+@media screen and (min-width:1367px) and (max-width:1440px) {
+    .apl-login.col-2 .brandbox {
+        top: 60px!important;
+        left: 50%!important
+    }
+    .apl-login.col-2 .brandbox img {
+        max-height: 50px!important
+    }
+    .apl-login.col-2 .loginbox .form {
+        padding: 28px!important
+    }
+}
+
+.hide {
+    display: none!important
+}
+
+.no-hide {
+    opacity: 1!important;
+    visibility: visible!important;
+    display: block!important
+}
+
+@-webkit-keyframes spinner {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes spinner {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.spinner:before {
+    content: '';
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    border-top-color: #333;
+    -webkit-animation: spinner .6s linear infinite;
+    animation: spinner .6s linear infinite;
+    z-index: 2000
+}
+
+.spinner.relative {
+    position: relative
+}

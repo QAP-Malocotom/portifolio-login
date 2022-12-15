@@ -1,19 +1,160 @@
 <!doctype html>
 <html lang="pt-BR">
-    <head>
-        <!-- TYPE -->
-        <meta charset="UTF-8">
-        <!-- TITLE -->
-        <title>Our Funky HTML Page</title>        
-        <!-- FONT -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css" media="all">
-        <!-- CDN -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        Content goes here.
-    </body>
-</html>
+    
+<head> 
+    <!-- TYPE -->
+    <meta charset="UTF-8">
+    <!-- TITLE -->
+    <title>Login de Membros</title><!--Pensar num nome legal-->
+            
+     <link rel="stylesheet" href="style.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css" media="all">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab" type="text/css" media="all">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style>
+        body,
+        html {
+            overflow-x: hidden !important;
+        }
+        
+        .apl-login {
+            background-color: #f1f2f5;
+        }
+        
+        .apl-login.has-border:before,
+        .apl-login.col-2.has-border .col-form:before {
+            background-image: linear-gradient(120deg, #4f4f4f, #4f4f4f);
+        }
+        
+        .apl-login .loginbox .form form input[type="submit"] {
+            background-color: #00adec;
+        }
+        
+        .apl-login .remember_link,
+        .apl-login .remembered_link {
+            color: #00adec !important;
+        }
+        /*BOX CENTRAL*/
+        
+        .apl-login.col-1 .form,
+        .apl-login.col-1 .form form input[type="text"],
+        .apl-login.col-1 .form form input[type="password"] {
+            background-color: #ffffff !important;
+        }
+        
+        .apl-login.col-1 .signup_link {
+            color: #3e464f !important;
+            opacity: 0.8;
+            -webkit-opacity: 0.8;
+            -moz-opacity: 0.8;
+        }
+        
+        .apl-login.col-1 .form form input[type="text"],
+        .apl-login.col-1 .form form input[type="password"] {
+            color: #3e464f !important;
+            border-bottom-color: #3e464f !important;
+        }
+        
+        .apl-login.col-1 .form form input[type="text"]::placeholder,
+        .apl-login.col-1 .form form input[type="password"]::placeholder {
+            color: #3e464f !important;
+        }
+        
+        .apl-login.col-1 h4,
+        .apl-login.col-1 p {
+            color: #3e464f !important;
+        }
+
+        /*DUAS COLUNAS*/
+        
+        .apl-login.col-2 .form,
+        .apl-login.col-2 .form form input[type="text"],
+        .apl-login.col-2 .form form input[type="password"] {
+            background-color: #ffffff !important;
+        }
+        
+        .apl-login.col-2 .signup_link {
+            color: #3e464f !important;
+            opacity: 0.6;
+            -webkit-opacity: 0.6;
+            -moz-opacity: 0.6;
+        }
+        
+        .apl-login.col-2 .form form input[type="text"],
+        .apl-login.col-2 .form form input[type="password"] {
+            color: #3e464f !important;
+            border-bottom-color: #3e464f !important;
+        }
+        
+        .apl-login.col-2 .form form input[type="text"]::placeholder,
+        .apl-login.col-2 .form form input[type="password"]::placeholder {
+            color: #3e464f !important;
+            opacity: 0.5 !important
+        }
+        
+        .apl-login.col-2 h4,
+        .apl-login.col-2 p {
+            color: #3e464f !important;
+        }
+        
+        .apl-login.col-2 .infobox h1,
+        .apl-login.col-2 .infobox p,
+        .apl-login.col-2 .infobox a {
+            color: #3e464f !important;
+        }
+        
+        .apl-login.col-2 .infobox a {
+            border: 2px solid #3e464f !important;
+        }
+        
+        .apl-login.col-2 .loginbox .form.sending:after {
+            background-color: #f1f2f5 !important;
+        }
+        
+        .apl-login.col-2 .form .errorbox {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- box central -->        
+    <div class="apl-login col-1 has-bg has-border" style="background-color: black;"></div>
+
+    <!--logo-->
+    <div class="loginbox animated fadeIn">   
+        <div class="brand">            
+            <img class="animated flipInX" src="logo.png">
+        </div>
+    </div>
+
+    <div class="form">
+        <h4 class="login-title" data-content="BEM-VINDO!">BEM-VINDO!</h4>
+        <p class="login-description" data-content="Se você já é aluno, preencha seus dados de acesso">
+            Se você já é aluno, preencha seus dados de acesso
+        </p>
+
+        <div class="loginform">
+            <form name="loginform" id="loginform" action="#" method="post">
+                <p class="login-username">
+                   <input class="input" type="text" name="user_login" id="user_login" value="" size="20" placeholder="Email" required>
+                   <span class="error hide">Insira sua senha</span>            
+                </p>
+
+                <p class="login-password">
+                    <input class="input" type="password" name="user_password" id="user_password" value="" size="20" placeholder="Senha" required>
+                    <span class="error hide">Insira sua senha</span>            
+                </p>
+
+                <p class="login-submit">
+                    <input type="submit" name="wp-submit" id="wp-submit" class="buttom buttom-primary" value="Acessar">                
+                </p>
+
+            </form>
+        </div>
+    </div>
+
+</body>
